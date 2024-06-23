@@ -1,0 +1,78 @@
+@import "reset.css";
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  color: #818181;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#board td {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  border-right: 1px solid #efefef;
+}
+#board td:last-of-type {
+  border: unset;
+}
+#board tr {
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+}
+#board tr:first-of-type {
+  border-top: unset;
+}
+#board tr:last-of-type {
+  border-bottom: unset;
+}
+.symbols {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.symbols > div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.symbols .name {
+  font-size: 26px;
+}
+.symbols .rux,
+.symbols .player {
+  color: cornflowerblue;
+  font-weight: normal;
+  font-size: 26px;
+}
+.symbols .rux.active,
+.symbols .player.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+#start {
+  padding: 10px 5px;
+  border-radius: 3px;
+  color: white;
+  background-color: cornflowerblue;
+  border-bottom-color: #efefef;
+}
+.message {
+  width: 100%;
+  border: 1px solid #efefef;
+  color: #818181;
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=game.css.map */
